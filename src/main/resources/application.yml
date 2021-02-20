@@ -9,3 +9,14 @@ spring:
       host: 127.0.0.1
       port: 27017
       auto-index-creation: true
+
+
+logging:
+  level:
+    #root: ERROR
+    org.springframework.web: ERROR
+    org.springframework.security: ERROR
+    com.asiczen: ERROR
+  file:
+    name: /home/lora/watermeter/device-service.log
+    max-size: 10 MB
