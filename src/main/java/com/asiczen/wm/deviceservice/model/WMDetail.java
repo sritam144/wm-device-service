@@ -13,6 +13,7 @@ public class WMDetail {
 
     private String deviceName;
     private String deviceEUI;
-    private String deviceAddress;
+    private double lng;
+    private double lat;
 
 }
