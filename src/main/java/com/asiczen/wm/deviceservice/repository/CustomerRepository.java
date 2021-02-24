@@ -7,4 +7,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(collectionResourceRel = "customer", path = "customer")
 public interface CustomerRepository extends MongoRepository<Customer, String> {
+
+    public Customer findByCustomerId(String customerId);
 }
